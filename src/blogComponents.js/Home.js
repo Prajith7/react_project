@@ -14,6 +14,9 @@ export const Home = ({blogs,setBlogs}) => {
      
 
     }
+    const readBtn=()=>{
+      
+    }
     const filterData= blogs.filter((el)=>{
       if(searchInput === ""){
         return el
@@ -36,6 +39,7 @@ export const Home = ({blogs,setBlogs}) => {
                <h2>{blog.title}</h2>
                 <p>{'author is '+blog.author}</p>
             <button  className="deletebtn" onClick={() =>deleteBlog(blog.id)}>delete </button>
+            <button onClick={readBtn}>Read</button>
             </div>
 
         )) }

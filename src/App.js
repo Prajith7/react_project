@@ -2,7 +2,6 @@ import './App.css';
 import {BrowserRouter as Router , Route , Routes, Link} from "react-router-dom";
 import { Home } from './blogComponents.js/Home';
 import { Title } from './blogComponents.js/Title';
-import { About } from './blogComponents.js/About';
 import { useState } from "react"
 function App() {
   const [blogs, setBlogs] = useState([
@@ -27,9 +26,6 @@ function App() {
         <Link className='link-1' to="/title" style={{padding:5}}>
           Title
         </Link>
-        <Link  className="link-1" to="/about" style={{padding:5}}>
-          About
-        </Link>
         </div>
         </div>
         <hr/>
@@ -39,7 +35,6 @@ function App() {
       <Route index element={<Home/>}/>
       <Route path="/home" element={<Home blogs={blogs}  setBlogs={setBlogs}/>}/>
       <Route path="/title" element={<Title blogs={blogs} setBlogs={setBlogs} />}/>
-      <Route path="/about" element={<About />}/>
     </Routes>
     </Router>
     </>
