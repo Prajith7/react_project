@@ -15,7 +15,8 @@ export const Title = ({blogs,setblogs}) => {
         blogs.unshift({
             title:title,
             author : author,
-            id:blogs.length+1
+            id:blogs.length+1,
+            color:false
         })
         navigate('/home');
     }

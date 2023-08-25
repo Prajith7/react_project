@@ -5,9 +5,9 @@ import { Title } from './blogComponents.js/Title';
 import { useState } from "react"
 function App() {
   const [blogs, setBlogs] = useState([
-    { title: 'The Final battle', body: 'lorem ipsum...', author: 'sherlock', id: 1 },
-    { title: 'Aventures of Blue Carbuncle !', body: 'lorem ipsum...', author: 'watson', id: 2 },
-    { title: 'Hounds of Baskerville', body: 'lorem ipsum...', author: 'moriarty', id: 3 }
+    { title: 'The Final battle', body: 'lorem ipsum...', author: 'sherlock', id: 1 ,color:false},
+    { title: 'Aventures of Blue Carbuncle !', body: 'lorem ipsum...', author: 'watson', id: 2  , color:false},
+    { title: 'Hounds of Baskerville', body: 'lorem ipsum...', author: 'moriarty', id: 3 , color:false }
   ]);
   return (
     <>
